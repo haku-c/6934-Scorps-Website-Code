@@ -1,0 +1,202 @@
+<!DOCTYPE HTML>
+<html lang="en" style="scroll-behavior:smooth">
+<head>
+    <meta charset="UTF-8">
+  <title>Team 6934</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href=css/Teamstylesheet.css>
+    <link rel="stylesheet" href="fontawesome-free-5.12.0-web/css/all.min.css">
+    <link rel="icon" type="image/png" href="http://achsrobotics.com/favicon.png">
+
+</head>
+
+<body>
+  <header>
+    
+        <nav> 
+            <!--<img src="assets/scorps-techv2.png" id="logo"> -->
+            <div class="navbar-left">
+                <div class="cam-logo">
+                    <img src="assets/scorps-logo.webp" id="cam-logo-picture" alt="6934 logo">
+                </div>
+                <p><a href="index.html" id="name"style="font-weight: 900"><i>scorps</i></a></p>
+            </div>                  
+            <div class="nav-container">
+                    <ul class="navbar-right">
+                        <li><a href="2020Challenge.html"><i>THE CHALLENGE</i></a></li>
+                        <li><a href="2020Team.html"> <i>THE TEAM</i></a></li>
+                        <li>
+                            <div class="memory-pulldown">
+                            <a> 
+                            <i>MEMORIES</i>
+                            <i class="fas fa-chevron-down"></i>
+                            </a>
+                            </div>
+                            <ul>
+                                <li><a href="gallery2019.html"> <i>2019 Season</i></a></li>
+                                <li><a href="gallery2020.html"> <i>2020 Season</i></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i>SPONSORS</i></a></li>
+                    </ul>
+            </div>
+        </nav>
+  </header>
+<main>
+  <div class=grayout id=grayout>
+    <img src="team/tl80.png" alt="Default">
+  </div>
+  <div class=popup id=maincard>
+    <div class=name></div>
+    <img src=''>
+    <div class=team></div>
+    <div class=about></div>
+</div>
+    <section>
+    <div class=pcontainer><i>Faculty and Mentors</i></div><!-- pcontainer is what I use for heading the different sections-->
+    <!-- you need an empty pcontainer div every 5 people so that if their text was different lengths the pcontainer makes all 5 of the next people start at the same height.-->
+    <div class=member-container>    
+    <div class=person onclick="show(this)"><img src="team/jjackson.JPG" alt="Jeff Jackson">
+            <div class=name>Jeff Jackson</div>
+            <div class=about>I teach computer science and robotics and like surfing.</div>
+    </div>
+    </div>  
+</section>
+ 
+<section>
+  <div class=pcontainer><i>Current Members</i></div>
+  <div class=member-container>
+    <div class=person onclick="show(this)"><img src="team/Huy.jpg" alt="Huy">
+        <div class=name>Huy Nguyen</div>
+        <div class=team>Programming</div>
+        <div class=about >I am a senior, and am the co-president of the club. This is my third year on the team.</div>
+    </div>
+
+    <div class=person onclick="show(this)"><img src="team/Trev.JPG" alt="Trevor">
+        <div class=name>Trevor Lopez</div>
+        <div class=team>Programming</div>
+        <div class=about>I am a senior, and am the co-president of the club. This is my third year on the team.</div>
+    </div>
+
+    <div class=person onclick="show(this)"><img src="team/dak.jpg" alt="Dakota">
+        <div class=name>Dakota Frost</div>
+        <div class=team>Mechanical, Electrical</div>
+        <div class=about>I am a senior, and am co-leading the mechanical team with Freddy. This is my third year on the team. I am also vice president.</div>
+    </div>
+
+    <div class=person onclick="show(this)"><img src="team/freddy3.jpg" alt="Freddy"> 
+        <div class=name>Freddy Stacy</div>
+        <div class=team>Mechanical, Fundraising</div>
+        <div class=about>I am a senior, and am co-leading the mechanical team with Dakota. This is my second year on the team. I am also treasurer.</div>
+    </div>
+
+    <div class=person onclick="show(this)"><img src="team/Ewang.JPG" alt="Edward">
+        <div class=name>Edward Wang</div>
+        <div class=team>Programming</div>
+        <div class=about>Calcy, take it!</div>
+    </div>
+  </div>
+   
+</section>
+<section>
+    <div class="member-container">
+    <div class=person onclick="show(this)"><img src="team/katelynr.jpg" alt="Katelyn">
+        <div class=name>Katelyn Raney</div>
+        <div class=team>Scouting</div>
+        <div class=about>I joined Robotics because I wanted a fun last two years of high school and to learn more about the math and engineering behind making robots!</div>
+    </div>
+
+    <div class=person onclick="show(this)"><img src="team/Marcella.jpg" alt="Marcella">
+        <div class=name>Marcella Barneclo</div>
+        <div class=team>Design</div>
+        <div class=about>I am a senior and this is my first year in Robotics. I mainly take pictures. </div>
+    </div>
+
+    <div class=person onclick="show(this)"><img src="team/Ryan.jpg" alt="Ryan">
+        <div class=name>Ryan Jones</div>
+        <div class=team>Mechanical</div>
+        <div class=about>Pizza. Dodgeball. Blowtorches... 'Nuff said.</div>
+    </div>
+
+    <div class=person onclick="show(this)"><img src="team/maggie.jpg" alt="Maggie">
+        <div class=name>Maggie Qian</div>
+        <div class=team>Programming</div>
+        <div class=about>This is my first year in robotics, i learnt a lot this year and mainly helped on Limelight</div>
+    </div>
+
+    <div class=person onclick="show(this)"><img src="team/JacobFoote.jpg" alt="Jacob">
+        <div class=name>Jacob Foote</div>
+        <div class=team>CAD and Design</div>
+        <div class=about>This is my first year in robotics during high school, but I did do robotics in middle school. I hope to pursue a career in engineering. </div>
+    </div>
+    </div>
+</section>
+<section>
+    <div class="member-container">
+    <div class=person onclick="show(this)"><img src="team/ChaseKanitz.jpg" alt="Chase">
+        <div class=name>Chase Kanitz</div>
+        <div class=team>Mechanical</div>
+        <div class=about>I joined Robotics because I wanted a fun club to join and I am interested in a STEM field. I love the collaboration and interaction with my teammates!</div>
+    </div>
+
+    <div class=person onclick="show(this)"><img src="team/JacobRodriguez.jpg" alt="Jacob">
+        <div class=name>Jacob Rodriguez</div>
+        <div class=team>Programming</div>
+        <div class=about>I joined robotics because I’ve always loved technology. Although I may not be as good as other programmers but I plan on learning as much as I can to contribute as much as I can to my team.</div>
+    </div>
+
+    <div class=person onclick="show(this)"><img src="team/AlexanderRamirez.jpg" alt="Alex" >
+        <div class=name>Alexander Ramirez</div>
+        <div class=team>Mechanical</div>
+        <div class=about>I'm on the mechanical team. I love to build something with my hands and seeing it work as intended!</div>
+    </div>
+
+    <div class=person onclick="show(this)"><img src="team/PHOTO.jpg" alt="Default Pic">
+        <div class=name></div>
+        <div class=team></div>
+        <div class=about></div>
+    </div>
+
+    <div class=person onclick="show(this)"><img src="team/PHOTO.jpg" alt="Default Pic">
+        <div class=name></div>
+        <div class=team></div>
+        <div class=about></div>
+    </div>
+    </div>
+</section>
+<section>
+    
+  <div class=pcontainer><i>Graduates</i></div>
+  <div class="member-container">
+    <div class=person onclick="show(this)"><img src="team/PHOTO.jpg" alt="Default Pic">
+        <div class=name>Name McName</div>
+        <div class=about>Joined 2017<br />Graduated 2019</div>
+    </div>
+    </div>
+  </section>
+</main>
+<footer>
+        <div class="footer-left">
+                <p>
+                </p>
+            </div>
+    <div class="footer-links">
+        <div class="footer-icons">
+               <!-- <a href="#" target="_blank" rel="noopener"><i class="fab fa-facebook fa-3x"></i></a>-->
+                <a href="https://twitter.com/achs_scorpions?lang=en" target="_blank" rel="noopener"><i class="fab fa-twitter fa-3x"></i></a>
+                <a href="https://www.instagram.com/camhighrobotics/?hl=en" target="_blank" rel="noopener"><i class="fab fa-instagram fa-3x" aria-hidden="true"></i></a>
+                <a href="https://github.com/Scorps6934" target="_blank" rel="noopener"><i class="fab fa-github fa-3x"></i></a>
+                <a href="#" ><i class="fas fa-chevron-circle-up fa-3x"></i></a>
+            </div>
+    </div>
+</footer> 
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.2/gsap.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+            <script src="TeamPage.js"></script>                 
+                                            
+</body>
+<!-- this code is Dakota™ certified to be at least 90% spaghetti.-->
+<!--I second that - Huy-->
+</html>

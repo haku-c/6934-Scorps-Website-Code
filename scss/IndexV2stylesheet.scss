@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,600');
+@import 'headerAndFooter.scss';
+
+body{ font: 14px sans-serif; text-align: center; 
+}
+$primary-blue: rgb(88, 97, 204);
+*{
+	 margin:0;
+ }                      
+
+/*top navbar ends here, content begins here*/
+section{
+	font-family: 'Roboto', sans-serif;
+	height: 60vh;
+	display:flex;
+	justify-content: center;
+	border: 1px solid black;
+
+    background-size: cover; 
+	background-position: center center; 
+}
+
+.parallax{
+	height: 100vh;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+  }
+  #robot-background {
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	height:100vh;
+	background: url("../assets/2019botcompressed.jpg");
+	background-size: cover;
+  }
+.team-name{
+	color:rgb(250,250,250);
+	font-size:60px;
+	font-family: "Josephin Sans", sans-serif;
+}
+
+@media (max-width: 1199px) {
+	.team-name{
+		font-size:55px;
+	}
+}
+#about {
+  height:460px;
+  background-color:$primary-blue;
+  display:flex;
+  justify-content:flex-start;
+}
+.about-container{
+	display:flex;
+	flex-direction:column;
+	padding-top:50px;
+	border: 0px solid black;
+}
+.about-container h{
+	font-size: 75px;
+	font-weight:900;
+	color:white;
+}
+.about-container p{
+	color:white;
+	font-size:22px;
+	margin: 25px 200px 50px 200px;
+	text-align: justify;
+}
+
+.about-horiz-line{
+	width: 20em;
+	border: 2px solid white;
+	height: 0px;
+	margin: 0 auto;
+}
+.about-image{
+	display:flex;
+    justify-content: center;
+    align-items: center;
+	overflow: hidden;
+}
+#regional{
+	object-fit: contain;
+}
+@media (max-width: 1199px) {
+	.about-container h{
+		font-size:55px;
+	}
+	.about-container p{
+		margin: 50px 40px 50px 40px;
+		font-size:18px;
+	}
+}
+#FIRST{
+	height:460px;
+	display:flex;
+	justify-content:flex-start;
+}
+.first-image{
+	display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#firstlogo1{
+	padding-left:100px;
+	width: 100%;
+	object-fit: contain;
+}
+.first-container{
+	padding-top:30px;
+	flex-direction:column;
+}
+.first-container h{
+	font-size: 75px;
+	font-weight:900;
+	color:rgb(93, 93, 145);
+}
+.first-container p{
+	color:rgb(93, 93, 145);
+	font-size:22px;
+	margin: 50px 200px 25px 200px;
+	text-align: justify;
+}
+.first-horiz-line{
+	width: 10em;
+	border: 2px solid rgb(93, 93, 145);
+	height: 0px;
+	margin: 0 auto;
+}
+@media (max-width: 1199px) {
+	.first-container h{
+		font-size:55px;
+	}
+	.first-container p{
+		margin: 50px 40px 10px 80px;
+		font-size:18px;
+	}
+}
+#contact{
+	height:460px;
+	background-color:rgb(93, 93, 145);
+}
+.contact-container{
+	padding-top:50px;
+}
+.contact-container h{
+	font-size: 75px;
+	font-weight:900;
+	color:white;
+}
+.contact-horiz-line{
+	width: 25em;
+	border: 2px solid white;
+	height: 0px;
+	margin: 0 auto;
+}
+.contact-container p{
+	color:white;
+	font-size:22px;
+	padding: 50px 300px 25px 300px;
+	text-align: justify;
+}
+
+@media (max-width: 1199px) {
+	.contact-container h{
+		font-size:55px;
+	}
+	.contact-container p{
+		padding: 50px 40px 10px 40px;
+		font-size:22px;
+	}
+}
+/* I stole these buttons...and go figure they don't use px so they are more scalable*/
+a.button1{
+	display:inline-block;
+	padding:0.35em 1.2em;
+	border:0.1em solid rgb(93, 93, 145);
+	margin:0 0.3em 0.3em 0;
+	border-radius:0.12em;
+	box-sizing: border-box;
+	text-decoration:none;
+	font-family:'Roboto',sans-serif;
+	font-size:20px;
+	font-weight:500;
+	color:rgb(93, 93, 145);
+	text-align:center;
+	transition: all 0.2s;
+	}
+a.button1:hover{
+	color:$primary-blue;
+	border:0.1em solid $primary-blue;
+	}
+
+

@@ -1,0 +1,44 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/gallery2020.css">
+  <link rel="stylesheet" href="fontawesome-free-5.12.0-web/css/all.min.css">
+  <link rel="icon" type="image/png" href="http://achsrobotics.com/favicon.png">
+</head>
+<header>
+    <nav> 
+        <div class="navbar-left">
+            <div class="cam-logo">
+                <img src="assets/scorps-logo.webp" id="cam-logo-picture">
+            </div>
+            <p><a href="index.html" id="name" style="font-weight: 900"><i>scorps</i></a></p>
+        </div>                  
+        <div class="nav-container">
+                <ul class="navbar-right">
+                    <li><a href="2020Challenge.html"><i>THE CHALLENGE</i></a></li>
+                    <li><a href="2020Team.html"> <i>THE TEAM</i></a></li>
+                    <li>
+                        <div class="memory-pulldown">
+                        <a> 
+                        <i>MEMORIES</i>
+                        <i class="fas fa-chevron-down"></i>
+                        </a>
+                        </div>
+                        <ul>
+                            <li><a href="gallery2019.html"> <i>2019 Season</i></a></li>
+                            <li><a href="gallery2020.html"> <i>2020 Season</i></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><i>SPONSORS</i></a></li>
+                   
+                </ul>
+        </div>
+    </nav>
+</header>
+
+<body><h2>Gallery </h2>
+<div id="megaboi" class="megaboi"><img class="bigboi" src='gallery_assets/tl80.png'></div><!-- this is the gray semi-opaque background that appears when you click on an image-->
+<div id="bigboi" class="bigboi"><img id="bigboiimg" class="bigboi" src='gallery_assets/void.png'></div><!-- this is the div that becomes the large image youre looking at-->
+<div id="left" onclick="prev()" class="left"><img src='gallery_assets/previous.png'></div><!-- left arrow-->
+<div id="right" onclick="next()" class="right"><img src='gallery_assets/next.png'></div><!-- right arrow-->
+<div id="close" onclick="close_()" class="close"><img src='gallery_assets/close.png'></div><!-- close button-->
+<div id="newtab" onclick="new_tab()" class="newtab"><img src='gallery_assets/newtab.png'></div><!-- open in new tab button-->
