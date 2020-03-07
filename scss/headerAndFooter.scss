@@ -42,11 +42,11 @@ nav{
 	/* padding: 0px 20px;*/
  }
 
- 
  .navbar-left{
 	 display:flex;
 	 padding-left:1em;
  }
+
 .cam-logo{
 	margin-left:3em;
 	width:100px;
@@ -138,6 +138,57 @@ nav ul li ul li:hover a{
 	color: $primary-blue;
 	border-bottom: none;
 }
+.navbar-mobile{
+	display:flex;
+	width:100%;
+	flex-direction: column;
+}
+.navbar-mobile-top{
+	width: 100%;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items:center;
+}
+.navbar-mobile-left{
+	display:flex;
+	padding-left:1em;
+	
+}
+
+.navbar-mobile-right{
+	display: flex;
+	flex-direction: column;
+	align-content:center;
+	justify-content: center;
+	padding-right: 2em;
+}
+
+.navbar-mobile-dropdown-container{
+}
+.navbar-mobile-dropdown{
+	width:100%;
+	margin-right: 0em;
+	display:flex;
+	flex-direction: column;
+	align-content: center;
+}
+
+
+@media screen and (max-width: 991px) {
+	/* start of large tablet styles */
+	
+	}
+	
+@media screen and (max-width: 767px) {
+	/* start of medium tablet styles */
+	
+	}
+	
+@media screen and (max-width: 479px) {
+	/* start of phone styles */
+	
+	}
 /*footer stuff begins here*/
 footer{
 	height: 173px;
@@ -188,4 +239,9 @@ footer{
 }	
 .fa-chevron-circle-up:hover{
 	color:$primary-blue;
+}
+
+.fa-bars:hover {
+	color:$primary-blue;
+	cursor: pointer; 
 }

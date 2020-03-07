@@ -7,7 +7,7 @@
       },
       get period() {
           /*change timer here*/
-        var dateFuture = new Date(new Date().getFullYear(), 2, 19);
+        var dateFuture = new Date(new Date().getFullYear(), 2, 20);
         var dateNow = new Date();
         var seconds = Math.floor((dateFuture - (dateNow))/1000);
         var minutes = Math.floor(seconds/60);

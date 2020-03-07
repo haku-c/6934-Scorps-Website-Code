@@ -124,6 +124,23 @@ nav ul li ul li:hover a {
   color: #5861cc;
   border-bottom: none; }
 
+.navbar-mobile {
+  display: flex;
+  justify-content: space-between; }
+
+.navbar-mobile-left {
+  display: flex;
+  padding-left: 1em; }
+
+@media screen and (max-width: 991px) {
+  /* start of large tablet styles */ }
+
+@media screen and (max-width: 767px) {
+  /* start of medium tablet styles */ }
+
+@media screen and (max-width: 479px) {
+  /* start of phone styles */ }
+
 /*footer stuff begins here*/
 footer {
   height: 173px;

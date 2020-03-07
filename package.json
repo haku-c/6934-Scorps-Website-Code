@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "scss-watch": "node-sass --watch scss/headerAndFooter.scss -o css",
     "scss-2020": "node-sass scss/2020Stylesheet.scss css/2020Stylesheet.css",
     "scss-team": "node-sass scss/Teamstylesheet.scss css/Teamstylesheet.css",
     "scss-index": "node-sass scss/IndexV2stylesheet.scss css/IndexV2stylesheet.css",
