@@ -100,7 +100,7 @@ nav ul li{
 /* these are the links on the dropdown*/
 nav ul li a {
 	display:block;
-	font-family:arial;
+	font-family:'Major Mono Display', monospace;
 	color:black;
 	font-size:14px;
 	padding:1.5em 1em;
@@ -111,7 +111,6 @@ nav ul li a {
 
 nav ul li a:hover {
 	color:rgb(50,130,250);
-	border-bottom: $primary-blue solid 0.28em;
 	/*transition:0.2s;*/
 }
 
@@ -138,7 +137,58 @@ nav ul li ul li:hover a{
 	color: $primary-blue;
 	border-bottom: none;
 }
+.navbar-mobile{
+	display:flex;
+	width:100%;
+	flex-direction: column;
+}
+.navbar-mobile-top{
+	width: 100%;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items:center;
+}
+.navbar-mobile-left{
+	display:flex;
+	padding-left:1em;
+	
+}
 
+.navbar-mobile-right{
+	display: flex;
+	flex-direction: column;
+	align-content:center;
+	justify-content: center;
+	padding-right: 2em;
+}
+
+.navbar-mobile-dropdown-container{
+    
+}
+.navbar-mobile-dropdown{
+	width:100%;
+	margin-right: 0em;
+	display:flex;
+	flex-direction: column;
+	align-content: center;
+}
+
+
+@media screen and (max-width: 991px) {
+	/* start of large tablet styles */
+	
+	}
+	
+@media screen and (max-width: 767px) {
+	/* start of medium tablet styles */
+	
+	}
+	
+@media screen and (max-width: 479px) {
+	/* start of phone styles */
+	
+	}
 /*footer stuff begins here*/
 footer{
 	height: 173px;
