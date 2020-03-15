@@ -39,7 +39,6 @@ var scene=new ScrollMagic.Scene({
 .setTween(tween2)
 .addTo(controller);
 
-
 /*function that pulls down the dropdown*/
 var dropdown=gsap.timeline();
 dropdown.paused(true);
