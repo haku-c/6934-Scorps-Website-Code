@@ -31,9 +31,9 @@ nav{
  }
  .navbar-desktop{
 	display:flex;
-	align-content: space-between;
-	width: 100%;
-}
+	justify-content:space-between;
+	width:100%
+ }
  nav p{
 	 font-family:arial;
 	 color:black;

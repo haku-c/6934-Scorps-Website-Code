@@ -27,7 +27,7 @@ nav {
 
 .navbar-desktop {
   display: flex;
-  align-content: space-between;
+  justify-content: space-between;
   width: 100%; }
 
 nav p {

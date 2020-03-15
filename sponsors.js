@@ -9,7 +9,7 @@ pullupMobile.to(".navbar-mobile-dropdown",{
 var dropdownMobile=gsap.timeline();
 dropdownMobile.paused(true);
 dropdownMobile.to(".navbar-mobile-dropdown",{
-    y:20,display:"flex",opacity:1, duration:1
+    display:"flex",opacity:1, duration:1
 });
 
 /*toggles if it is up or down*/

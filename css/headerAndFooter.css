@@ -25,31 +25,33 @@ nav {
   /*height:60px*/
   background-color: #fafafa; }
 
+.navbar-desktop {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; }
+
 nav p {
-  /*margin-left:150px;*/
   font-family: arial;
   color: black;
   font-size: 24px;
   line-height: 2.5em;
-  /*line-height:55px;*/
   float: left;
-  padding-right: 1em;
-  /* padding: 0px 20px;*/ }
+  padding-right: 1em; }
 
 .navbar-left {
   display: flex;
-  padding-left: 1em; }
+  padding-left: 1em;
+  height: 100%; }
 
 .cam-logo {
   margin-left: 3em;
   width: 100px;
-  height: 100px; }
+  height: 100%; }
 
 #cam-logo-picture {
-  max-width: 90%;
-  max-height: 75%;
-  position: relative;
-  bottom: .5em; }
+  max-width: 100%;
+  max-height: 100%;
+  position: relative; }
 
 #name {
   font-family: 'Major Mono Display', monospace;
@@ -66,6 +68,12 @@ nav p {
   height: 60px;
   right: 475px;
   position: relative; }
+
+.memory-pulldown {
+  font-family: 'Major Mono Display', monospace;
+  font-size: 14px;
+  display: flex;
+  justify-content: center; }
 
 .memory-pulldown:hover {
   cursor: pointer; }
@@ -88,7 +96,7 @@ nav ul li {
 /* these are the links on the dropdown*/
 nav ul li a {
   display: block;
-  font-family: arial;
+  font-family: 'Major Mono Display', monospace;
   color: black;
   font-size: 14px;
   padding: 1.5em 1em;
@@ -98,7 +106,6 @@ nav ul li a {
 
 nav ul li a:hover {
   color: #3282fa;
-  border-bottom: #5861cc solid 0.28em;
   /*transition:0.2s;*/ }
 
 nav ul li ul {
@@ -122,6 +129,50 @@ nav ul li ul li a {
 nav ul li ul li:hover a {
   color: #5861cc;
   border-bottom: none; }
+
+.navbar-mobile {
+  display: none; }
+
+@media screen and (max-width: 991px) {
+  /* start of large tablet styles */
+  .navbar-desktop {
+    display: none; }
+  .navbar-mobile {
+    display: flex;
+    width: 100%;
+    flex-direction: column; }
+  .navbar-mobile-top {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 4.28em; }
+  .navbar-mobile-left {
+    display: flex;
+    padding-left: 1em; }
+  .navbar-mobile-right {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding-right: 2em; }
+  .navbar-mobile-bottom-container {
+    background-color: #fafafa;
+    width: 60%;
+    margin: auto; }
+  .navbar-mobile-dropdown {
+    width: 100%;
+    margin-right: 0em;
+    display: none;
+    flex-direction: column;
+    align-content: center; } }
+
+@media screen and (max-width: 767px) {
+  /* start of medium tablet styles */ }
+
+@media screen and (max-width: 479px) {
+  /* start of phone styles */ }
 
 /*footer stuff begins here*/
 footer {
