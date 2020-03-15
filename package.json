@@ -12,7 +12,8 @@
     "scss-header": "node-sass scss/headerAndFooter.scss css/headerAndFooter.css",
     "scss-header-mobile": "node-sass scss/headerAndFooterMobile.scss css/headerAndFooterMobile.css",
     "scss-gallery2020":"node-sass scss/gallery2020.scss css/gallery2020.css",
-    "scss-gallery2019":"node-sass scss/gallery2019.scss css/gallery2019.css"
+    "scss-gallery2019":"node-sass scss/gallery2019.scss css/gallery2019.css",
+    "scss-watch": "node-sass --watch scss/ -o css/"
   },
   "author": "",
   "license": "ISC"

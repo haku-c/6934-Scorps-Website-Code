@@ -379,6 +379,29 @@ section {
   padding: 50px 300px 25px 300px;
   text-align: justify; }
 
+@media (max-width: 500px) {
+  #about {
+    flex-direction: column;
+    height: 170vh; }
+  .about-container {
+    height: 70vh; }
+  .about-image {
+    height: 100vh; }
+  #FIRST {
+    flex-direction: column;
+    height: 170vh; }
+  .first-container {
+    height: 70vh; }
+  .first-container p {
+    margin: 40px 40px 10px 40px; }
+  .first-image {
+    height: 100vh;
+    overflow: hidden; }
+  #firstlogo1 {
+    padding-left: 0; }
+  #contact {
+    height: 100vh; } }
+
 @media (max-width: 1199px) {
   .contact-container h {
     font-size: 55px; }
