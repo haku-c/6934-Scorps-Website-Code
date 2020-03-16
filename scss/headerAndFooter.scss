@@ -249,15 +249,19 @@ footer{
 .fa-chevron-circle-up{
 	padding:.5em .25em 0em .25em;
 	display:inline-block;
-    position:absolute;
-    right:0;
+	position:absolute;
+	right: 0;
 	margin-right:3em;
 	color:rgb(230,230,255);
 }	
 .fa-chevron-circle-up:hover{
 	color:$primary-blue;
 }
-
+@media (max-width:414px){
+	.fa-chevron-circle-up{
+		margin-right:0em;
+	}
+}
 .fa-bars:hover {
 	color:$primary-blue;
 	cursor: pointer; 

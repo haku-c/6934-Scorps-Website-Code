@@ -223,6 +223,10 @@ footer {
 .fa-chevron-circle-up:hover {
   color: #5861cc; }
 
+@media (max-width: 414px) {
+  .fa-chevron-circle-up {
+    margin-right: 0em; } }
+
 .fa-bars:hover {
   color: #5861cc;
   cursor: pointer; }
