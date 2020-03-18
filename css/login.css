@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css?family=Major+Mono+Display");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Major Mono Display', monospace;
+  background-color: grey; }
+
+.loginContainer {
+  width: 300px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: #C0C0C0;
+  border: 1px solid black; }
+
+.loginContainer h1 {
+  color: white; }
+
+.loginContainer input[type="text"], .loginContainer input[type="password"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 1px solid black;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s; }
+
+.loginContainer input[type="text"]:focus, .loginContainer input[type="password"]:focus {
+  width: 200px;
+  border-color: #5861cc; }
+
+.loginContainer input[type="submit"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 1px solid #4df091;
+  padding: 14px 40px;
+  width: 200px;
+  outline: none;
+  color: grey;
+  border-radius: 24px;
+  transition: 0.25s; }
+
+.loginContainer input[type="submit"]:hover {
+  background: #4df091;
+  color: white; }
