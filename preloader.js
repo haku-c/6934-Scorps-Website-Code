@@ -94,27 +94,44 @@ acAnimated.animateChar = function(char) {
     var timeline = new TimelineMax({});
     timeline.from(char, acAnimated.randomNumber(3, 5) / 10, {
         top: acAnimated.randomDirection(acAnimated.randomNumber(10, 50)), 
-        rotationZ: acAnimated.randomDirection(acAnimated.randomNumber(90, 360)), 
-        rotationX: acAnimated.randomDirection(acAnimated.randomNumber(90, 360)), 
+       //rotationZ: acAnimated.randomDirection(acAnimated.randomNumber(90, 360)), 
+        rotationZ: acAnimated.randomDirection(250), 
+        //rotationX: acAnimated.randomDirection(acAnimated.randomNumber(90, 360)), 
+        rotationX: acAnimated.randomDirection(250), 
         opacity: 0});
     return timeline;
 }
 acAnimated.animateChar1 = function(char) {
     var timeline = new TimelineMax({});
-    timeline.from(char, acAnimated.randomNumber(3, 5) / 10, {
+    timeline.from(char, {
         opacity:0,
         duration:0.3,
         y:acAnimated.randomNumber(-80, 80)
     });
     return timeline;
 }
-var text = document.body.querySelector(".notfound-404 h2");
+acAnimated.animateChar2 = function(char) {
+    var timeline = new TimelineMax({});
+    timeline.from(char, 0.3, {
+        opacity:0,
+        y:-90
+    });
+    return timeline;
+}
+var text = document.body.querySelector(".preloader h1");
 var splitText = acAnimated.Plugins.SplitText(text,{
     words: 1, chars: 1, spacing: 10
   });
-  var timeline =new gsap.timeline();
-  for (var i=0; i<=splitText.chars.length-1; i++) {
+var timeline =new gsap.timeline();
+  
+for (var i=0; i<=splitText.chars.length-1; i++) {
     var char = splitText.chars[i];
-    timeline.add("animated_char_" + String(i), acAnimated.randomNumber(1, 20)/ 10);
-    timeline.add(acAnimated.animateChar1(char), "animated_char_" + String(i));
+    //adds animations in a random order
+    //timeline.add("animated_char_" + String(i), acAnimated.randomNumber(1, 20)/ 10);
+    timeline.add(acAnimated.animateChar2(char), "animated_char_" + String(i)); 
 }
+timeline.paused(true); 
+timeline.play();
+timeline.to(".preloader h1",{
+    opacity:0
+});

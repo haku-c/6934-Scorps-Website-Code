@@ -1,3 +1,4 @@
+/* fade in for the main robot picture
 var tl=gsap.timeline(); 
 tl.from("#robot-background",{
     webkitFilter: 'blur(6px)', filter: 'blur(6px)', duration: 2
@@ -5,6 +6,7 @@ tl.from("#robot-background",{
 tl.from(".team-name",{
     duration: 2, y:30, ease:"power1"
 },"-=2");
+*/
 var tween1=gsap.timeline();
 tween1.from(".about-horiz-line", {
     opacity:0, x:-100, duration: 1, ease: "power1" 
@@ -124,3 +126,17 @@ var parallax = new ScrollMagic.Scene({
     ease: Linear.easeNone
 })
 .addTo(controller2);
+
+$(document).ready(function() {
+    // page is fully loaded, including all frames, objects and images
+setTimeout(function(){
+
+  $('.preloader').css("display","none");
+  //gets rid of scrollbar
+  $('body').css("overflow","visible");
+  $('header').css("visibility","visible");
+  $('main').css("visibility","visible");
+  $('footer').css("visibility","visible");
+}, 1500);
+}); 
+
